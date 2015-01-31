@@ -1,0 +1,26 @@
+{
+  "name": "d3-playground",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevmo/d3-playground.git"
+  },
+  "keywords": [
+    "d3",
+    "node"
+  ],
+  "author": "kevmo@github",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevmo/d3-playground/issues"
+  },
+  "homepage": "https://github.com/kevmo/d3-playground",
+  "dependencies": {
+    "d3": "^3.5.3"
+  }
+}
