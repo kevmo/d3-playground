@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/kevmo/d3-playground",
   "dependencies": {
-    "d3": "^3.5.3"
+    "d3": "^3.5.3",
+    "express": "^4.11.1",
+    "jade": "^1.9.1"
   }
 }
