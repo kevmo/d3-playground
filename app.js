@@ -10,12 +10,15 @@ if (env == 'develop'){
     app.set('views', 'templates');
 };
 
-// Node_module file routes
+// Script routes configured
 //---------------------------
-app.get('/node_modules/d3/d3.js', function(req, res){
+app.get('/node_modules/:path', function(req, res){
     res.sendFile(path.join(__dirname, 'node_modules', 'd3', 'd3.min.js'));
 });
 
+app.get('/static/js/:filename', function(req, res){
+    res.sendFile(path.join(__dirname, 'static', 'js', req.params.filename));
+});
 
 // Client-side routes
 //---------------------------
