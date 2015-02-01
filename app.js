@@ -23,6 +23,12 @@ app.get('/', function(req, res){
     res.render('base.jade');
 });
 
+app.get('/barchart/:id', function(req, res){
+    var barchartId = req.params.id,
+        page2render = "bar_chart_" + barchartId + ".jade";
+    res.render(page2render);
+});
+
 var server = app.listen(8080, function(){
   var host = server.address().address,
       port = server.address().port;
